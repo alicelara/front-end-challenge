@@ -1,0 +1,103 @@
+<html ng-app="relayRobin">
+<head>
+	<title>Relay Robin Challenge</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+</head>
+<body ng-controller="inboxCtrl">
+	<div id="wrapper">
+		<div class="top-header">
+			<img src="assets/logo/relayrobin_logo.svg" class="logo"/>
+			<a class="user" ng-click="isDropdownOpen = !isDropdownOpen">
+				<img src="assets/icons/avatar.svg" class="avatar" />
+				<img src="assets/icons/downarrow.svg" class="downarrow" />
+			</a>
+			<ul class="dropdown" ng-show="isDropdownOpen">
+				<li><a href="#">Alice Lara</a></li>
+				<li><a href="#">some other option</a></li>
+			</ul>
+		</div>
+		<div class="sidebar">
+			<div class="settings">
+				Wholesale
+				<a href="#"><img src="assets/icons/settings1.svg" /></a>
+			</div>
+			<nav class="main-menu">
+				<ul>
+					<li><a href="#">Dashboard</a></li>
+					<li><a href="#">Email</a></li>
+					<li><a href="#">Export</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="main-content">
+			<h1>Email Templates</h1>
+			<table>
+				<thead>
+					<tr>
+						<td><input type="checkbox" class="checkbox" ng-model="checkboxSelected"/></td>
+						<td>
+							<span ng-hide="checkboxSelected">Template Name</span>
+							<div class="group-buttons" ng-show="checkboxSelected">
+								<button class="action-buttons">
+									<img src="assets/icons/delete.svg" class="delete" />&nbsp;
+								</button><button class="action-buttons">
+								<img src="assets/icons/refresh.svg" class="refresh" />&nbsp;
+							</button><button class="action-buttons">
+								<img src="assets/icons/duplicate.svg" class="duplicate" />&nbsp;</button><button class="action-buttons">More Actions<span class="downarrow"></span></button>
+							</div>
+						</td>
+						<td><span ng-hide="checkboxSelected">Created</span></td>
+						<td><button class="create">Create Template</button></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><input type="checkbox" class="checkbox" /></td>
+						<td><a href="#">Lorem ipsum dolor sit amit</td>
+						<td>08/16/14</td>
+						<td><button class="edit">Edit</button></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="checkbox" /></td>
+						<td><a href="#">Lorem ipsum dolor sit amit</td>
+						<td>08/16/14</td>
+						<td><button class="edit">Edit</button></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="checkbox" /></td>
+						<td><a href="#">Lorem ipsum dolor sit amit</td>
+						<td>08/16/14</td>
+						<td><button class="edit">Edit</button></td>
+					</tr>
+					<tr>
+						<td><input type="checkbox" class="checkbox" /></td>
+						<td><a href="#">Lorem ipsum dolor sit amit</td>
+						<td>08/16/14</td>
+						<td><button class="edit">Edit</button></td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="3" class="email-results">4 of 28 Results</td>
+						<td>
+							<span><a href="#" class="prev-page">< Prev</a></span>
+							<span class="pagination">
+								<a href="#" class="page">1</a>
+								<a href="#" class="page">2</a>
+								<a href="#" class="page">3</a>
+								<a href="#" class="page">4</a>
+								<a href="#" class="page">5</a>
+								<a href="#" class="page">6</a>
+								<a href="#" class="page">7</a>
+							</span>
+							<span><a href="#" class="next-page">Next ></a></span>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+<script type="text/javascript" src="javascripts/script.js"></script>
+</body>
+</html>
