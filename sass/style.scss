@@ -29,6 +29,7 @@
 $tb-border-color: 1px solid #d9dfe7;
 $rr-blue: #4a90e2;
 $rr-gray: #f9f9f9;
+$light-hover: #f3f9ff;
 $header-shadow: 0 1px 4px #cecece;
 *, *:before, *:after {
   margin:0;
@@ -98,13 +99,20 @@ button {
       list-style: none;
       background-color: #FFFFFF;
       box-shadow: $header-shadow;
+      &.ng-hide-add.ng-hide-add-active,
+      &.ng-hide-remove.ng-hide-remove-active {
+        -webkit-transition:all linear 0.5s;
+        transition:all linear 0.5s;
+      }
       li {
         line-height: 3rem;
         a {
           display: inherit;
           padding:10px 22px;
+          border-left: 3px solid transparent;
           &:hover {
-            background-color: #cecece;  
+            background-color: $light-hover;
+            border-left: 3px solid $rr-blue;
           }
         }
       }
@@ -247,7 +255,7 @@ button {
       tbody {
         tr {
           &:hover {
-            background-color: #f3f9ff;
+            background-color: $light-hover;
           }
         }
       }

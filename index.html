@@ -35,10 +35,10 @@
 			<table>
 				<thead>
 					<tr>
-						<td><input type="checkbox" class="checkbox" ng-model="checkboxSelected"/></td>
+						<td><input type="checkbox" ng-model="checkboxMaster"/></td>
 						<td>
-							<span ng-hide="checkboxSelected">Template Name</span>
-							<div class="group-buttons" ng-show="checkboxSelected">
+							<span ng-hide="checkboxMaster">Template Name</span>
+							<div class="group-buttons" ng-show="checkboxMaster">
 								<button class="action-buttons">
 									<img src="assets/icons/delete.svg" class="delete" />&nbsp;
 								</button><button class="action-buttons">
@@ -47,31 +47,31 @@
 								<img src="assets/icons/duplicate.svg" class="duplicate" />&nbsp;</button><button class="action-buttons">More Actions<span class="downarrow"></span></button>
 							</div>
 						</td>
-						<td><span ng-hide="checkboxSelected">Created</span></td>
+						<td><span ng-hide="checkboxMaster">Created</span></td>
 						<td><button class="create">Create Template</button></td>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td><input type="checkbox" class="checkbox" /></td>
+						<td><input type="checkbox" class="emailCheckbox" ng-model="checkbox.firstCheckbox" ng-change="isCheckboxSelected()" /></td>
 						<td><a href="#">Lorem ipsum dolor sit amit</td>
 						<td>08/16/14</td>
 						<td><button class="edit">Edit</button></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="checkbox" /></td>
+						<td><input type="checkbox" class="emailCheckbox" ng-model="checkbox.secondCheckbox" ng-change="isCheckboxSelected()"/></td>
 						<td><a href="#">Lorem ipsum dolor sit amit</td>
 						<td>08/16/14</td>
 						<td><button class="edit">Edit</button></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="checkbox" /></td>
+						<td><input type="checkbox" class="emailCheckbox" ng-model="checkbox.thirdCheckbox" ng-change="isCheckboxSelected()"/></td>
 						<td><a href="#">Lorem ipsum dolor sit amit</td>
 						<td>08/16/14</td>
 						<td><button class="edit">Edit</button></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="checkbox" /></td>
+						<td><input type="checkbox" class="emailCheckbox" ng-checked="isCheckboxSelected()"/></td>
 						<td><a href="#">Lorem ipsum dolor sit amit</td>
 						<td>08/16/14</td>
 						<td><button class="edit">Edit</button></td>
