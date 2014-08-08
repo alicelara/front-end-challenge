@@ -1,6 +1,6 @@
 var relayRobin = angular.module('relayRobin',[]);
 
-relayRobin.controller('inboxCtrl', ['$scope', function($scope) {
+relayRobin.controller('inboxCtrl', function($scope) {
 	$scope.checkboxMaster = false;
   $scope.isCheckboxSelected = function() {
   	var getCheckboxes = document.querySelector('.emailCheckbox:checked');
@@ -10,4 +10,4 @@ relayRobin.controller('inboxCtrl', ['$scope', function($scope) {
 	  	$scope.checkboxMaster = false;
 	  }
   }
-}]);
+});
