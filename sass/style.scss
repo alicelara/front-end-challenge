@@ -87,11 +87,6 @@ button {
     list-style: none;
     background-color: #FFFFFF;
     box-shadow: $header-shadow;
-    // &.ng-hide-add.ng-hide-add-active,
-    // &.ng-hide-remove.ng-hide-remove-active {
-    //   -webkit-transition:all linear 0.5s;
-    //   transition:all linear 0.5s;
-    // }
     li {
       line-height: 3rem;
       a {
@@ -176,7 +171,7 @@ button {
         width: 60px;
       }
       &:nth-child(2) {
-        width: 350px;
+        min-width: 350px;
       }
       &:nth-child(3) {
         width: 100px;
