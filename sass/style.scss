@@ -64,6 +64,23 @@ button {
   cursor: pointer;
 }
 
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display:inline-block;
+  width:19px;
+  height:19px;
+  border: $tb-border-color;
+  border-radius: 2px;
+
+}
+
+input[type="checkbox"]:checked + label {
+    background:url('../assets/icons/checkmark.svg') top no-repeat;
+}
+
 #wrapper {
   position:relative;
   width: 100%;

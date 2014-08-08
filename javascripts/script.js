@@ -5,7 +5,9 @@ relayRobin.controller('inboxCtrl', ['$scope', function($scope) {
   $scope.isCheckboxSelected = function() {
   	var getCheckboxes = document.querySelector('.emailCheckbox:checked');
   	if(getCheckboxes !== null) {
-	  	$scope.checkboxMaster = !$scope.checkboxMaster;
+	  	$scope.checkboxMaster = true;
+	  } else {
+	  	$scope.checkboxMaster = false;
 	  }
   }
 }]);
