@@ -55,6 +55,7 @@ button {
   position:relative;
   width: 100%;
   height: 100%;
+  background-color: #f1f3f4;
   overflow-x: hidden;
 }
 .top-header {
@@ -152,12 +153,9 @@ button {
 
 .main-content {
   position: absolute;
-  top: 60px;
+  top: 0;
   left: 200px;
-  height: 100%;
-  width: 85%;
-  background-color: #f1f3f4;
-  padding: 45px 20px 50px 27px;
+  padding: 105px 20px 50px 27px;
   overflow: auto;
   table {
     background-color: #ffffff;
