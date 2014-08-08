@@ -12,7 +12,7 @@
   src: url("../assets/fonts/lato_bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/lato_bold.woff") format("woff");
 }
 
-/* line 34, ../sass/style.scss */
+/* line 20, ../sass/style.scss */
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -21,12 +21,12 @@
   box-sizing: border-box;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 46, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -34,24 +34,24 @@ body {
   color: #333333;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 39, ../sass/style.scss */
 h1 {
   font-family: 'Lato Bold', sans-serif;
   padding-bottom: 25px;
 }
 
-/* line 58, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 a {
   text-decoration: none;
   color: #4a90e2;
 }
 
-/* line 63, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 button {
   cursor: pointer;
 }
 
-/* line 67, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 #wrapper {
   position: relative;
   width: 100%;
@@ -59,7 +59,7 @@ button {
   overflow-x: hidden;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .top-header {
   position: fixed;
   width: 100%;
@@ -68,28 +68,28 @@ button {
   box-shadow: 0 2px 3px rgba(80, 80, 80, 0.1);
   z-index: 1;
 }
-/* line 80, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 .top-header img.logo {
   padding: 20px 25px;
 }
-/* line 83, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .top-header a.user {
   position: absolute;
   right: 0;
   padding: 15px 30px;
   cursor: pointer;
 }
-/* line 88, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 .top-header a.user img.avatar {
   width: 30px;
   opacity: 0.2;
 }
-/* line 92, ../sass/style.scss */
+/* line 78, ../sass/style.scss */
 .top-header a.user img.downarrow {
   width: 10px;
   margin: 7px 0 7px 10px;
 }
-/* line 97, ../sass/style.scss */
+/* line 83, ../sass/style.scss */
 .top-header ul.dropdown {
   position: absolute;
   top: 60px;
@@ -98,23 +98,23 @@ button {
   background-color: #FFFFFF;
   box-shadow: 0 2px 3px rgba(80, 80, 80, 0.1);
 }
-/* line 109, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .top-header ul.dropdown li {
   line-height: 3rem;
 }
-/* line 111, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 .top-header ul.dropdown li a {
   display: inherit;
   padding: 10px 22px;
   border-left: 3px solid transparent;
 }
-/* line 115, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .top-header ul.dropdown li a:hover {
   background-color: #f3f9ff;
   border-left: 3px solid #4a90e2;
 }
 
-/* line 124, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 .sidebar {
   position: fixed;
   top: 60px;
@@ -123,7 +123,13 @@ button {
   height: 100%;
   color: #FFFFFF;
 }
-/* line 131, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
+.sidebar svg {
+  width: 20px;
+  fill: rgba(255, 255, 255, 0.8);
+  margin: 0 20px;
+}
+/* line 122, ../sass/style.scss */
 .sidebar .settings {
   text-transform: uppercase;
   font-size: 1rem;
@@ -131,67 +137,34 @@ button {
   color: #bdc5c8;
   padding: 25px 25px 5px;
 }
-/* line 137, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .sidebar .settings img {
   float: right;
   width: 15px;
   opacity: 0.5;
 }
-/* line 144, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .sidebar nav.main-menu ul {
   list-style-type: none;
 }
-/* line 146, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .sidebar nav.main-menu ul li {
   line-height: 3.5rem;
 }
-/* line 148, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 .sidebar nav.main-menu ul li a {
   background-position: 22px 10px;
   color: #FFFFFF;
   display: inherit;
-}
-/* line 16, ../sass/style.scss */
-.sidebar nav.main-menu ul li:first-child a {
-  padding: 0 6.5rem;
-  background-image: url("../assets/icons/dashboard.svg");
-  background-size: 2.5rem;
-  background-repeat: no-repeat;
   border-left: 3px solid transparent;
 }
-/* line 22, ../sass/style.scss */
-.sidebar nav.main-menu ul li:first-child a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-left: 3px solid #FFFFFF;
-}
-/* line 16, ../sass/style.scss */
-.sidebar nav.main-menu ul li:nth-child(2) a {
-  padding: 0 6.5rem;
-  background-image: url("../assets/icons/email.svg");
-  background-size: 2.5rem;
-  background-repeat: no-repeat;
-  border-left: 3px solid transparent;
-}
-/* line 22, ../sass/style.scss */
-.sidebar nav.main-menu ul li:nth-child(2) a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-left: 3px solid #FFFFFF;
-}
-/* line 16, ../sass/style.scss */
-.sidebar nav.main-menu ul li:last-child a {
-  padding: 0 6.5rem;
-  background-image: url("../assets/icons/export.svg");
-  background-size: 2.5rem;
-  background-repeat: no-repeat;
-  border-left: 3px solid transparent;
-}
-/* line 22, ../sass/style.scss */
-.sidebar nav.main-menu ul li:last-child a:hover {
+/* line 144, ../sass/style.scss */
+.sidebar nav.main-menu ul li a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-left: 3px solid #FFFFFF;
 }
 
-/* line 167, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 .main-content {
   position: absolute;
   top: 60px;
@@ -202,36 +175,36 @@ button {
   padding: 45px 20px 50px 27px;
   overflow: auto;
 }
-/* line 176, ../sass/style.scss */
+/* line 163, ../sass/style.scss */
 .main-content table {
   background-color: #ffffff;
   border: 1px solid #d9dfe7;
   width: 99%;
   border-spacing: 0;
 }
-/* line 181, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .main-content table td {
   border: none;
   border-bottom: 1px solid #d9dfe7;
   padding: 10px 20px;
 }
-/* line 185, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .main-content table td:first-child {
   width: 60px;
 }
-/* line 188, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .main-content table td:nth-child(2) {
   width: 350px;
 }
-/* line 191, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .main-content table td:nth-child(3) {
   width: 100px;
 }
-/* line 195, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .main-content table input[type="checkbox"] {
   display: none;
 }
-/* line 197, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .main-content table input[type="checkbox"] + label {
   display: inline-block;
   width: 19px;
@@ -239,16 +212,16 @@ button {
   border: 1px solid #d9dfe7;
   border-radius: 2px;
 }
-/* line 204, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .main-content table input[type="checkbox"]:checked + label {
   background: url("../assets/icons/checkmark.svg") top no-repeat;
 }
-/* line 211, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .main-content table thead td:nth-child(2) .group-buttons {
   position: relative;
   display: inline-block;
 }
-/* line 215, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button {
   float: none;
   border-radius: 0;
@@ -256,24 +229,24 @@ button {
   border: 1px solid #d9dfe7;
   padding: 5px 15px;
 }
-/* line 221, ../sass/style.scss */
+/* line 208, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button img {
   height: 20px;
 }
-/* line 224, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:not(:first-child) {
   border-left: 0;
 }
-/* line 227, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:hover {
   background-color: #f1f1f1;
 }
-/* line 230, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:first-child {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 234, ../sass/style.scss */
+/* line 221, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -281,75 +254,75 @@ button {
   top: -3px;
   position: relative;
 }
-/* line 240, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:last-child img.downarrow {
   width: 8px;
   float: right;
   margin: 3px 0 0 10px;
 }
-/* line 252, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .main-content table tfoot td {
   border: none;
   height: 50px;
   width: 50%;
 }
-/* line 256, ../sass/style.scss */
+/* line 243, ../sass/style.scss */
 .main-content table tfoot td:first-child {
   border-right: 1px solid #d9dfe7;
 }
-/* line 261, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .main-content table tfoot td span a:hover {
   color: #cee1f7;
 }
-/* line 265, ../sass/style.scss */
+/* line 252, ../sass/style.scss */
 .main-content table tfoot td span.pagination {
   padding-left: 13%;
 }
-/* line 268, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .main-content table tfoot td span.pagination a.page {
   padding: 5px 10px;
 }
-/* line 271, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .main-content table tfoot td span.pagination a:hover {
   background-color: #4a90e2;
   border-radius: 5px;
   color: #FFFFFF;
 }
-/* line 280, ../sass/style.scss */
+/* line 267, ../sass/style.scss */
 .main-content table tfoot td span:last-child {
   float: right;
 }
-/* line 288, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .main-content table tbody tr:hover {
   background-color: #f3f9ff;
 }
-/* line 294, ../sass/style.scss */
+/* line 281, ../sass/style.scss */
 .main-content table button {
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 1.4rem;
   float: right;
 }
-/* line 299, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .main-content table button:focus {
   outline: none;
 }
-/* line 302, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .main-content table button.create {
   background-color: #4a90e2;
   border: 1px solid #0078b2;
   color: #FFFFFF;
 }
-/* line 306, ../sass/style.scss */
+/* line 293, ../sass/style.scss */
 .main-content table button.create:hover {
   opacity: 0.8;
 }
-/* line 310, ../sass/style.scss */
+/* line 297, ../sass/style.scss */
 .main-content table button.edit {
   background-color: #f9f9f9;
   border: 1px solid #d9dfe7;
 }
-/* line 313, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .main-content table button.edit:hover {
   background-color: #f1f1f1;
 }
