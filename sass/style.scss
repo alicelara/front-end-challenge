@@ -129,6 +129,9 @@ button {
       float: right;
       width: 15px;
       opacity: 0.5;
+      &:hover {
+        opacity: 0.3;
+      }
     }
   }
   nav.main-menu {

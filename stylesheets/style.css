@@ -143,28 +143,32 @@ button {
   width: 15px;
   opacity: 0.5;
 }
-/* line 135, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
+.sidebar .settings img:hover {
+  opacity: 0.3;
+}
+/* line 138, ../sass/style.scss */
 .sidebar nav.main-menu ul {
   list-style-type: none;
 }
-/* line 137, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .sidebar nav.main-menu ul li {
   line-height: 3.5rem;
 }
-/* line 139, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .sidebar nav.main-menu ul li a {
   background-position: 22px 10px;
   color: #FFFFFF;
   display: inherit;
   border-left: 3px solid transparent;
 }
-/* line 144, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .sidebar nav.main-menu ul li a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-left: 3px solid #FFFFFF;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .main-content {
   position: absolute;
   top: 60px;
@@ -175,36 +179,36 @@ button {
   padding: 45px 20px 50px 27px;
   overflow: auto;
 }
-/* line 163, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .main-content table {
   background-color: #ffffff;
   border: 1px solid #d9dfe7;
   width: 99%;
   border-spacing: 0;
 }
-/* line 168, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .main-content table td {
   border: none;
   border-bottom: 1px solid #d9dfe7;
   padding: 10px 20px;
 }
-/* line 172, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .main-content table td:first-child {
   width: 60px;
 }
-/* line 175, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .main-content table td:nth-child(2) {
   width: 350px;
 }
-/* line 178, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .main-content table td:nth-child(3) {
   width: 100px;
 }
-/* line 182, ../sass/style.scss */
+/* line 185, ../sass/style.scss */
 .main-content table input[type="checkbox"] {
   display: none;
 }
-/* line 184, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 .main-content table input[type="checkbox"] + label {
   display: inline-block;
   width: 19px;
@@ -212,16 +216,16 @@ button {
   border: 1px solid #d9dfe7;
   border-radius: 2px;
 }
-/* line 191, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .main-content table input[type="checkbox"]:checked + label {
   background: url("../assets/icons/checkmark.svg") top no-repeat;
 }
-/* line 198, ../sass/style.scss */
+/* line 201, ../sass/style.scss */
 .main-content table thead td:nth-child(2) .group-buttons {
   position: relative;
   display: inline-block;
 }
-/* line 202, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button {
   float: none;
   border-radius: 0;
@@ -229,24 +233,24 @@ button {
   border: 1px solid #d9dfe7;
   padding: 5px 15px;
 }
-/* line 208, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button img {
   height: 20px;
 }
-/* line 211, ../sass/style.scss */
+/* line 214, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:not(:first-child) {
   border-left: 0;
 }
-/* line 214, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:hover {
   background-color: #f1f1f1;
 }
-/* line 217, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:first-child {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 221, ../sass/style.scss */
+/* line 224, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -254,75 +258,75 @@ button {
   top: -3px;
   position: relative;
 }
-/* line 227, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .main-content table thead td:nth-child(2) button:last-child img.downarrow {
   width: 8px;
   float: right;
   margin: 3px 0 0 10px;
 }
-/* line 239, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .main-content table tfoot td {
   border: none;
   height: 50px;
   width: 50%;
 }
-/* line 243, ../sass/style.scss */
+/* line 246, ../sass/style.scss */
 .main-content table tfoot td:first-child {
   border-right: 1px solid #d9dfe7;
 }
-/* line 248, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .main-content table tfoot td span a:hover {
   color: #cee1f7;
 }
-/* line 252, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .main-content table tfoot td span.pagination {
   padding-left: 13%;
 }
-/* line 255, ../sass/style.scss */
+/* line 258, ../sass/style.scss */
 .main-content table tfoot td span.pagination a.page {
   padding: 5px 10px;
 }
-/* line 258, ../sass/style.scss */
+/* line 261, ../sass/style.scss */
 .main-content table tfoot td span.pagination a:hover {
   background-color: #4a90e2;
   border-radius: 5px;
   color: #FFFFFF;
 }
-/* line 267, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .main-content table tfoot td span:last-child {
   float: right;
 }
-/* line 275, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 .main-content table tbody tr:hover {
   background-color: #f3f9ff;
 }
-/* line 281, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .main-content table button {
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 1.4rem;
   float: right;
 }
-/* line 286, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .main-content table button:focus {
   outline: none;
 }
-/* line 289, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .main-content table button.create {
   background-color: #4a90e2;
   border: 1px solid #0078b2;
   color: #FFFFFF;
 }
-/* line 293, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .main-content table button.create:hover {
   opacity: 0.8;
 }
-/* line 297, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 .main-content table button.edit {
   background-color: #f9f9f9;
   border: 1px solid #d9dfe7;
 }
-/* line 300, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .main-content table button.edit:hover {
   background-color: #f1f1f1;
 }
