@@ -12,7 +12,7 @@
        url('../assets/fonts/lato_bold.woff') format('woff') /* Modern Browsers */
 }
 
-$tb-border-color: 1px solid #d9dfe7;
+$border-color: 1px solid #d9dfe7;
 $rr-blue: #4a90e2;
 $rr-gray: #f9f9f9;
 $light-hover: #f3f9ff;
@@ -160,12 +160,12 @@ button {
   overflow: auto;
   table {
     background-color: #ffffff;
-    border: $tb-border-color;
+    border: $border-color;
     width: 99%;
     border-spacing: 0;
     td {
       border: none;
-      border-bottom: $tb-border-color;
+      border-bottom: $border-color;
       padding: 10px 20px;
       &:first-child {
         width: 60px;
@@ -183,7 +183,7 @@ button {
         display:inline-block;
         width:19px;
         height:19px;
-        border: $tb-border-color;
+        border: $border-color;
         border-radius: 2px;
       }
       &:checked + label {
@@ -201,7 +201,7 @@ button {
             float: none;  
             border-radius: 0;
             background-color: $rr-gray;
-            border: $tb-border-color;
+            border: $border-color;
             padding: 5px 15px;
             img {
               height: 20px;
@@ -239,7 +239,7 @@ button {
         height: 50px;
         width: 50%;
         &:first-child {
-          border-right: $tb-border-color;
+          border-right: $border-color;
         }
         span {
           a {
@@ -294,7 +294,7 @@ button {
       }
       &.edit {
         background-color: $rr-gray;
-        border: $tb-border-color;
+        border: $border-color;
         &:hover {
           background-color: darken($rr-gray, 3%);
         }
