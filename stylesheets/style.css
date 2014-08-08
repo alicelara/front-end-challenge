@@ -52,128 +52,107 @@ button {
 }
 
 /* line 67, ../sass/style.scss */
-input[type="checkbox"] {
-  display: none;
-}
-
-/* line 71, ../sass/style.scss */
-input[type="checkbox"] + label {
-  display: inline-block;
-  width: 19px;
-  height: 19px;
-  border: 1px solid #d9dfe7;
-  border-radius: 2px;
-}
-
-/* line 80, ../sass/style.scss */
-input[type="checkbox"]:checked + label {
-  background: url("../assets/icons/checkmark.svg") top no-repeat;
-}
-
-/* line 84, ../sass/style.scss */
 #wrapper {
   position: relative;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
-/* line 88, ../sass/style.scss */
-#wrapper .top-header {
+
+/* line 73, ../sass/style.scss */
+.top-header {
   position: fixed;
   width: 100%;
-  height: 70px;
+  height: 60px;
   background-color: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 1px 4px #cecece;
+  box-shadow: 0 2px 3px rgba(80, 80, 80, 0.1);
   z-index: 1;
 }
-/* line 95, ../sass/style.scss */
-#wrapper .top-header img.logo {
-  padding: 25px;
+/* line 80, ../sass/style.scss */
+.top-header img.logo {
+  padding: 20px 25px;
 }
-/* line 98, ../sass/style.scss */
-#wrapper .top-header a.user {
+/* line 83, ../sass/style.scss */
+.top-header a.user {
   position: absolute;
   right: 0;
-  padding: 25px;
+  padding: 15px 30px;
   cursor: pointer;
 }
-/* line 103, ../sass/style.scss */
-#wrapper .top-header a.user img.avatar {
+/* line 88, ../sass/style.scss */
+.top-header a.user img.avatar {
   width: 30px;
   opacity: 0.2;
 }
-/* line 107, ../sass/style.scss */
-#wrapper .top-header a.user img.downarrow {
+/* line 92, ../sass/style.scss */
+.top-header a.user img.downarrow {
   width: 10px;
   margin: 7px 0 7px 10px;
 }
-/* line 112, ../sass/style.scss */
-#wrapper .top-header ul.dropdown {
+/* line 97, ../sass/style.scss */
+.top-header ul.dropdown {
   position: absolute;
-  top: 70px;
+  top: 60px;
   right: 25px;
   list-style: none;
   background-color: #FFFFFF;
-  box-shadow: 0 1px 4px #cecece;
+  box-shadow: 0 2px 3px rgba(80, 80, 80, 0.1);
 }
-/* line 120, ../sass/style.scss */
-#wrapper .top-header ul.dropdown.ng-hide-add.ng-hide-add-active, #wrapper .top-header ul.dropdown.ng-hide-remove.ng-hide-remove-active {
-  -webkit-transition: all linear 0.5s;
-  transition: all linear 0.5s;
-}
-/* line 124, ../sass/style.scss */
-#wrapper .top-header ul.dropdown li {
+/* line 109, ../sass/style.scss */
+.top-header ul.dropdown li {
   line-height: 3rem;
 }
-/* line 126, ../sass/style.scss */
-#wrapper .top-header ul.dropdown li a {
+/* line 111, ../sass/style.scss */
+.top-header ul.dropdown li a {
   display: inherit;
   padding: 10px 22px;
   border-left: 3px solid transparent;
 }
-/* line 130, ../sass/style.scss */
-#wrapper .top-header ul.dropdown li a:hover {
+/* line 115, ../sass/style.scss */
+.top-header ul.dropdown li a:hover {
   background-color: #f3f9ff;
   border-left: 3px solid #4a90e2;
 }
-/* line 138, ../sass/style.scss */
-#wrapper .sidebar {
+
+/* line 124, ../sass/style.scss */
+.sidebar {
   position: fixed;
-  top: 70px;
+  top: 60px;
   background-color: #213b47;
   width: 200px;
   height: 100%;
   color: #FFFFFF;
 }
-/* line 145, ../sass/style.scss */
-#wrapper .sidebar .settings {
+/* line 131, ../sass/style.scss */
+.sidebar .settings {
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 1.8rem;
   color: #bdc5c8;
   padding: 25px 25px 5px;
 }
-/* line 151, ../sass/style.scss */
-#wrapper .sidebar .settings img {
+/* line 137, ../sass/style.scss */
+.sidebar .settings img {
   float: right;
   width: 15px;
   opacity: 0.5;
 }
-/* line 158, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul {
+/* line 144, ../sass/style.scss */
+.sidebar nav.main-menu ul {
   list-style-type: none;
 }
-/* line 160, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul li {
-  line-height: 3rem;
+/* line 146, ../sass/style.scss */
+.sidebar nav.main-menu ul li {
+  line-height: 3.5rem;
 }
-/* line 162, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul li a {
-  background-position: 22px 5px;
+/* line 148, ../sass/style.scss */
+.sidebar nav.main-menu ul li a {
+  background-position: 22px 10px;
   color: #FFFFFF;
   display: inherit;
 }
 /* line 16, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul li:first-child a {
+.sidebar nav.main-menu ul li:first-child a {
   padding: 0 6.5rem;
   background-image: url("../assets/icons/dashboard.svg");
   background-size: 2.5rem;
@@ -181,12 +160,12 @@ input[type="checkbox"]:checked + label {
   border-left: 3px solid transparent;
 }
 /* line 22, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul li:first-child a:hover {
+.sidebar nav.main-menu ul li:first-child a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-left: 3px solid #FFFFFF;
 }
 /* line 16, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul li:nth-child(2) a {
+.sidebar nav.main-menu ul li:nth-child(2) a {
   padding: 0 6.5rem;
   background-image: url("../assets/icons/email.svg");
   background-size: 2.5rem;
@@ -194,12 +173,12 @@ input[type="checkbox"]:checked + label {
   border-left: 3px solid transparent;
 }
 /* line 22, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul li:nth-child(2) a:hover {
+.sidebar nav.main-menu ul li:nth-child(2) a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-left: 3px solid #FFFFFF;
 }
 /* line 16, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul li:last-child a {
+.sidebar nav.main-menu ul li:last-child a {
   padding: 0 6.5rem;
   background-image: url("../assets/icons/export.svg");
   background-size: 2.5rem;
@@ -207,135 +186,170 @@ input[type="checkbox"]:checked + label {
   border-left: 3px solid transparent;
 }
 /* line 22, ../sass/style.scss */
-#wrapper .sidebar nav.main-menu ul li:last-child a:hover {
+.sidebar nav.main-menu ul li:last-child a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   border-left: 3px solid #FFFFFF;
 }
-/* line 180, ../sass/style.scss */
-#wrapper .main-content {
+
+/* line 167, ../sass/style.scss */
+.main-content {
   position: absolute;
-  top: 0;
+  top: 60px;
   left: 200px;
   height: 100%;
   width: 85%;
   background-color: #f1f3f4;
-  padding: 110px 0 0 25px;
+  padding: 45px 20px 50px 27px;
   overflow: auto;
 }
-/* line 189, ../sass/style.scss */
-#wrapper .main-content table {
+/* line 176, ../sass/style.scss */
+.main-content table {
   background-color: #ffffff;
   border: 1px solid #d9dfe7;
-  width: 95%;
+  width: 99%;
   border-spacing: 0;
 }
-/* line 194, ../sass/style.scss */
-#wrapper .main-content table td {
+/* line 181, ../sass/style.scss */
+.main-content table td {
   border: none;
   border-bottom: 1px solid #d9dfe7;
   padding: 10px 20px;
 }
-/* line 202, ../sass/style.scss */
-#wrapper .main-content table thead td:nth-child(2) .group-buttons {
+/* line 185, ../sass/style.scss */
+.main-content table td:first-child {
+  width: 60px;
+}
+/* line 188, ../sass/style.scss */
+.main-content table td:nth-child(2) {
+  width: 350px;
+}
+/* line 191, ../sass/style.scss */
+.main-content table td:nth-child(3) {
+  width: 100px;
+}
+/* line 195, ../sass/style.scss */
+.main-content table input[type="checkbox"] {
+  display: none;
+}
+/* line 197, ../sass/style.scss */
+.main-content table input[type="checkbox"] + label {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #d9dfe7;
+  border-radius: 2px;
+}
+/* line 204, ../sass/style.scss */
+.main-content table input[type="checkbox"]:checked + label {
+  background: url("../assets/icons/checkmark.svg") top no-repeat;
+}
+/* line 211, ../sass/style.scss */
+.main-content table thead td:nth-child(2) .group-buttons {
   position: relative;
   display: inline-block;
 }
-/* line 206, ../sass/style.scss */
-#wrapper .main-content table thead td:nth-child(2) button {
+/* line 215, ../sass/style.scss */
+.main-content table thead td:nth-child(2) button {
   float: none;
   border-radius: 0;
   background-color: #f9f9f9;
   border: 1px solid #d9dfe7;
   padding: 5px 15px;
 }
-/* line 212, ../sass/style.scss */
-#wrapper .main-content table thead td:nth-child(2) button img {
+/* line 221, ../sass/style.scss */
+.main-content table thead td:nth-child(2) button img {
   height: 20px;
 }
-/* line 215, ../sass/style.scss */
-#wrapper .main-content table thead td:nth-child(2) button:not(:first-child) {
+/* line 224, ../sass/style.scss */
+.main-content table thead td:nth-child(2) button:not(:first-child) {
   border-left: 0;
 }
-/* line 218, ../sass/style.scss */
-#wrapper .main-content table thead td:nth-child(2) button:hover {
+/* line 227, ../sass/style.scss */
+.main-content table thead td:nth-child(2) button:hover {
   background-color: #f1f1f1;
 }
-/* line 221, ../sass/style.scss */
-#wrapper .main-content table thead td:nth-child(2) button:first-child {
+/* line 230, ../sass/style.scss */
+.main-content table thead td:nth-child(2) button:first-child {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 225, ../sass/style.scss */
-#wrapper .main-content table thead td:nth-child(2) button:last-child {
+/* line 234, ../sass/style.scss */
+.main-content table thead td:nth-child(2) button:last-child {
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
   line-height: 2.3rem;
   top: -3px;
   position: relative;
 }
-/* line 238, ../sass/style.scss */
-#wrapper .main-content table tfoot td {
+/* line 240, ../sass/style.scss */
+.main-content table thead td:nth-child(2) button:last-child img.downarrow {
+  width: 8px;
+  float: right;
+  margin: 3px 0 0 10px;
+}
+/* line 252, ../sass/style.scss */
+.main-content table tfoot td {
   border: none;
   height: 50px;
   width: 50%;
 }
-/* line 242, ../sass/style.scss */
-#wrapper .main-content table tfoot td:first-child {
+/* line 256, ../sass/style.scss */
+.main-content table tfoot td:first-child {
   border-right: 1px solid #d9dfe7;
 }
-/* line 247, ../sass/style.scss */
-#wrapper .main-content table tfoot td span a:hover {
+/* line 261, ../sass/style.scss */
+.main-content table tfoot td span a:hover {
   color: #cee1f7;
 }
-/* line 251, ../sass/style.scss */
-#wrapper .main-content table tfoot td span.pagination {
+/* line 265, ../sass/style.scss */
+.main-content table tfoot td span.pagination {
   padding-left: 13%;
 }
-/* line 254, ../sass/style.scss */
-#wrapper .main-content table tfoot td span.pagination a.page {
+/* line 268, ../sass/style.scss */
+.main-content table tfoot td span.pagination a.page {
   padding: 5px 10px;
 }
-/* line 257, ../sass/style.scss */
-#wrapper .main-content table tfoot td span.pagination a:hover {
+/* line 271, ../sass/style.scss */
+.main-content table tfoot td span.pagination a:hover {
   background-color: #4a90e2;
   border-radius: 5px;
   color: #FFFFFF;
 }
-/* line 266, ../sass/style.scss */
-#wrapper .main-content table tfoot td span:last-child {
+/* line 280, ../sass/style.scss */
+.main-content table tfoot td span:last-child {
   float: right;
 }
-/* line 274, ../sass/style.scss */
-#wrapper .main-content table tbody tr:hover {
+/* line 288, ../sass/style.scss */
+.main-content table tbody tr:hover {
   background-color: #f3f9ff;
 }
-/* line 280, ../sass/style.scss */
-#wrapper .main-content table button {
+/* line 294, ../sass/style.scss */
+.main-content table button {
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 1.4rem;
   float: right;
 }
-/* line 285, ../sass/style.scss */
-#wrapper .main-content table button:focus {
+/* line 299, ../sass/style.scss */
+.main-content table button:focus {
   outline: none;
 }
-/* line 288, ../sass/style.scss */
-#wrapper .main-content table button.create {
+/* line 302, ../sass/style.scss */
+.main-content table button.create {
   background-color: #4a90e2;
   border: 1px solid #0078b2;
   color: #FFFFFF;
 }
-/* line 292, ../sass/style.scss */
-#wrapper .main-content table button.create:hover {
+/* line 306, ../sass/style.scss */
+.main-content table button.create:hover {
   opacity: 0.8;
 }
-/* line 296, ../sass/style.scss */
-#wrapper .main-content table button.edit {
+/* line 310, ../sass/style.scss */
+.main-content table button.edit {
   background-color: #f9f9f9;
   border: 1px solid #d9dfe7;
 }
-/* line 299, ../sass/style.scss */
-#wrapper .main-content table button.edit:hover {
+/* line 313, ../sass/style.scss */
+.main-content table button.edit:hover {
   background-color: #f1f1f1;
 }

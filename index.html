@@ -46,7 +46,7 @@
 								</button><button class="action-buttons">
 								<img src="assets/icons/refresh.svg" class="refresh" />&nbsp;
 							</button><button class="action-buttons">
-								<img src="assets/icons/duplicate.svg" class="duplicate" />&nbsp;</button><button class="action-buttons">More Actions<span class="downarrow"></span></button>
+								<img src="assets/icons/duplicate.svg" class="duplicate" />&nbsp;</button><button class="action-buttons">More Actions...<img src="assets/icons/downarrow.svg" class="downarrow" /></button>
 							</div>
 						</td>
 						<td><span ng-hide="checkboxMaster">Created</span></td>
@@ -65,19 +65,28 @@
 						<td><button class="edit">Edit</button></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="emailCheckbox" ng-model="checkbox.secondCheckbox" ng-change="isCheckboxSelected()"/></td>
+						<td>
+							<input type="checkbox" id="cb2" class="emailCheckbox" ng-model="checkbox.secondCheckbox" ng-change="isCheckboxSelected()" />
+							<label for="cb2"></label>
+						</td>
 						<td><a href="#">Lorem ipsum dolor sit amit</td>
 						<td>08/16/14</td>
 						<td><button class="edit">Edit</button></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="emailCheckbox" ng-model="checkbox.thirdCheckbox" ng-change="isCheckboxSelected()"/></td>
+						<td>
+							<input type="checkbox" id="cb3" class="emailCheckbox" ng-model="checkbox.thirdCheckbox" ng-change="isCheckboxSelected()" />
+							<label for="cb3"></label>
+						</td>
 						<td><a href="#">Lorem ipsum dolor sit amit</td>
 						<td>08/16/14</td>
 						<td><button class="edit">Edit</button></td>
 					</tr>
 					<tr>
-						<td><input type="checkbox" class="emailCheckbox" ng-checked="isCheckboxSelected()"/></td>
+						<td>
+							<input type="checkbox" id="cb4" class="emailCheckbox" ng-model="checkbox.fourthCheckbox" ng-change="isCheckboxSelected()" />
+							<label for="cb4"></label>
+						</td>
 						<td><a href="#">Lorem ipsum dolor sit amit</td>
 						<td>08/16/14</td>
 						<td><button class="edit">Edit</button></td>
